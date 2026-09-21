@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>استمارة تحديث حساب بنك الخرطوم - </title>
+    <title>استمارة تحديث حساب بنك الخرطوم</title>
     <!-- استدعاء خط يدوي -->
     <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&family=Marhey&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -14,24 +14,24 @@
             padding: 0;
         }
         body {
-            background-color: #111827;
+            background-color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            width: 100vw;
+            overflow: hidden;
         }
         .app-screen {
             width: 100%;
-            max-width: 412px;
             height: 100vh;
-            max-height: 870px;
             background-color: #ffffff;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             position: relative;
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
-            border-radius: 16px;
+            box-shadow: none;
+            border-radius: 0;
             overflow: hidden;
         }
         .screen {
@@ -223,7 +223,6 @@
             font-weight: bold;
         }
         
-        /* تنسيقات استمارة المعاينة */
         .preview-form-container {
             background-color: #fcf8f2;
             background-image: linear-gradient(135deg, #fdfbf7 0%, #f7f1e5 100%);
@@ -316,7 +315,6 @@
             pointer-events: none;
         }
         
-        /* ترويسة الشاشات النهائية */
         .top-header {
             background: linear-gradient(180deg, #e10a14 0%, #b80c13 100%);
             padding: 20px 16px;
@@ -436,7 +434,6 @@
             border-top: 1px dashed #cbd5e1;
         }
 
-        /* نافذة خطأ الإدخال المنبثقة */
         .modal-overlay {
             display: none;
             position: absolute;
@@ -488,7 +485,6 @@
             box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 3px 6px rgba(0,0,0,0.15);
         }
 
-        /* Bottom Navigation Bar */
         .bottom-nav {
             display: flex;
             justify-content: space-around;
@@ -575,7 +571,6 @@
 
 <div class="app-screen">
 
-    <!-- شاشة التحميل المؤقتة للانتقال -->
     <div id="loader-overlay">
         <div class="bankak-loader-box">
             <div class="spinner"></div>
@@ -598,7 +593,7 @@
         <div class="page-header">
             <div class="form-main-title-ar">استمارة تحديث بيانات العملاء</div>
             <div class="form-main-title-en">Customer Information Update Form</div>
-            <div class="bank-logo-text">  <span></span></div>
+            <div class="bank-logo-text"><span></span></div>
         </div>
 
         <div class="form-content">
